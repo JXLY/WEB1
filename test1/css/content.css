@@ -1,0 +1,26 @@
+#Con_1{
+ margin-left: 300px;
+ margin-top: 0px;
+}  
+#C2
+{
+width:580px; 
+background-color: #989898;
+border-style: dashed;
+padding: 10px 10px 10px 100px;
+}
+
+#footer{
+    height: 105px;
+    clear: both;
+    background-color: black;
+    text-align: center;
+    margin-top: 0px;
+}  
+p.boot{
+
+color: white;
+
+
+}
+
