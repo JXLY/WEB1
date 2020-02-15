@@ -1,167 +1,238 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>河北中学</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
+	<meta charset="utf-8">
+	<title>希望亲爱的情人节快乐+1（jQuery+Html5）</title>	    
+    <link type="text/css" rel="stylesheet" href="css/default.css">
+		
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jscex.min.js"></script>
+	<script type="text/javascript" src="js/jscex-parser.js"></script>
+	<script type="text/javascript" src="js/jscex-jit.js"></script>
+	<script type="text/javascript" src="js/jscex-builderbase.min.js"></script>
+	<script type="text/javascript" src="js/jscex-async.min.js"></script>
+	<script type="text/javascript" src="js/jscex-async-powerpack.min.js"></script>
+	<script type="text/javascript" src="js/functions.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/love.js" charset="utf-8"></script>
+	
+	<style type="text/css">
+		/*.STYLE1 {
+			color: #666666;
+		}*/
+	</style>
 </head>
-
 <body>
-    <table width="100%">
-        <!-- 页头部分 -->
-        <tr>
-            <td background="images/bg.gif" align="center">
-                <table width="60%" background="images/banner.jpg">
-                    <tr class="menu">
-                        <td height="75px">首页</td>
-                        <td><a href="index.html">学校概况</a></td>
-                        <td><a href="index.html">规章制度</a></td>
-                        <td><a href="index.html">德育网</a></td>
-                        <td><a href="index.html">教研网</a></td>
-                        <td><a href="index.html">名师风采</a></td>
-                        <td><a href="index.html">高考专栏</a></td>
-                        <td><a href="index.html">图书馆</a></td>
-                        <td><a href="index.html">校友会</a></td>
-                        <td><a href="index.html" >河中论坛</td>
-                        <td><a href="index.html" class="special">查询系统</a></td>
-                    </tr>
-                    <tr>
-                        <td colspan="11" height="210px"></td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <!-- 页面主体部分 -->
-        <tr>
-            <td align="center">
-                <table width="60%">
-                    <tr>
-                        <td>
-                            <table>
-                                <tr>
-                                    <td width="25%"><img src="images/pic.jpg" alt="新闻图片" /></td>
-                                    <td width="55%">
-                                        <img src="images/news_pic_title.gif" alt=" 河中新闻" usemap="#Map1" />
-                                        <map name="Map1" id="Map1">
-                                            <area shape="rect" coords="386,21,430,44" href="list.html?type=河中新闻">
-                                        </map>
-                                        <ul>
-                                            <li><a href="content.html" class="hot">【家长学校1306期】大学主要的专业介绍</a>&nbsp;&nbsp;2015-12-10</li>
-                                            <li>
-                                                <a href="content.html">[图文]化学老师于文英举办观摩课活动</a>&nbsp;&nbsp;2015-12-10
-                                            </li>
-                                            <li>
-                                                <a href="content.html">[图文]本部数学组组织公开课教学</a>&nbsp;&nbsp;2015-12-10
-                                            </li>
-                                            <li>
-                                                <a href="content.html">[图文]校工会组织教职工广场舞展示、交流活动</a>&nbsp;&nbsp;2015-12-10
-                                            </li>
-                                            <li>
-                                                <a href="content.html">[图文]生物教师开展观摩课活动</a>&nbsp;&nbsp;2015-12-10
-                                            </li>
-                                            <li>
-                                                <a href="content.html">[图文]首届“五四杯”青年篮球对抗赛成功举办</a>&nbsp;&nbsp;2015-12-10
-                                            </li>
-                                            <li>
-                                                <a href="content.html">[图文]高二理科部召开第二次月考表彰大会</a>&nbsp;&nbsp;2015-12-10
-                                            </li>
-                                            <li>
-                                                <a href="content.html">[图文]加强消防培训，确保学生安全</a>&nbsp;&nbsp;2015-12-10
-                                            </li>
-                                        </ul>
-                                    </td>
-                                    <td width="20%">
-                                        <img src="images/notice_title.gif" alt="校园公告">
-                                        <ul class="disc">
-                                            <li><a href="content.html">河北中学男子篮球体育特长生招生简章 (2015-04-11)</a></li>
-                                            <li><a href="content.html">河北中学音乐特长生复试名单 (2015-04-08)</a></li>
-                                            <li><a href="content.html"> 河北中学2015年艺术特长生招生简章 (2015-03-01)</a></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table>
-                                <tr>
-                                    <td colspan="2" width="50%">
-                                        <img src="images/news_jy_title.gif" alt="河中教研网" usemap="#Map2" />
-                                        <map name="Map2" id="Map2">
-                                            <area shape="rect" coords="439,11,481,33" href="list.html?type=河中教研">
-                                        </map>
-                                    </td>
-                                    <td colspan="2" width="50%">
-                                        <img src="images/news_dy_title.gif" alt="河中德育网" usemap="#Map3" />
-                                        <map name="Map3" id="Map3">
-                                            <area shape="rect" coords="439,11,481,33" href="list.html?type=河中德育">
-                                        </map>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="images/news_jy_pic.gif" alt="教研图片" />
-                                    </td>
-                                    <td>
-                                        <ul>
-                                            <li><a href="content.html">[公开课教学][图文]化学老师于文英举办观摩课活动</a></li>
-                                            <li><a href="content.html">[公开课教学][图文]本部数学组组织公开课教学校调研</a></li>
-                                            <li><a href="content.html">[公开课教学][图文]生物老师开展观摩课活动</a></li>
-                                            <li><a href="content.html">[教学交流][组图]文科部高一年级召开期中考试分析…</a></li>
-                                            <li><a href="content.html">[教与学][图文]【教与学】打破思维定势走出误区…</a></li>
-                                            <li><a href="content.html">[教学交流][组图]石家庄市教科所专家来我</a></li>
-                                        </ul>
-                                    </td>
-                                    <td>
-                                        <img src="images/news_dy_pic.gif" alt="德育新闻" />
-                                    </td>
-                                    <td>
-                                        <ul>
-                                            <li><a href="content.html">[公开课教学][图文]化学老师于文英举办观摩课活动</a></li>
-                                            <li><a href="content.html">[公开课教学][图文]本部数学组组织公开课教学校调研</a></li>
-                                            <li><a href="content.html">[公开课教学][图文]生物老师开展观摩课活动</a></li>
-                                            <li><a href="content.html">[教学交流][组图]文科部高一年级召开期中考试分析…</a></li>
-                                            <li><a href="content.html">[教与学][图文]【教与学】打破思维定势走出误区…</a></li>
-                                            <li><a href="content.html">[教学交流][组图]石家庄市教科所专家来我</a></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table>
-                                <tr>
-                                    <td width="25%" align="center">
-                                        <img src="images/gnq.gif" alt="热点区域" usemap="#Map4" />
-                                        <map name="Map4" id="Map4">
-                                            <area shape="rect" coords="144,133,250,240" href="index.html#河中视频">
-                                            <area shape="rect" coords="12,129,119,239" href="index.html#通讯录">
-                                            <area shape="rect" coords="9,6,116,113" href="index.html#数字校园">
-                                            <area shape="rect" coords="140,9,243,114" href="index.html#班级空间">
-                                        </map>
-                                    </td>
-                                    <td width="25%" align="center"><img src="images/tup.gif" alt="校园风景" /></td>
-                                    <td width="25%" align="center"><img src="images/tup.gif" alt="校园风景" /></td>
-                                    <td width="25%" align="center"><img src="images/tup.gif" alt="校园风景" /></td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <!-- 页脚部分 -->
-        <tr>
-            <td height="70px" align="center" background="images/foot_bg.gif">
-                <font color="white">Copyright © 2008－2016 http://www.***.com All Rights Reserved 网站备案：冀ICP备00000000号</font>
-            </td>
-        </tr>
-    </table>
-</body>
+	<!--===音乐：原谅——刘瑞琦======================================-->
+	<audio autoplay>
+			<source src="music/forgive.mp3"/>
+	</audio>  
+	
+	<!--==============================================================-->
+	<div id="main">
+        <div id="error">
+        	抱歉！目前您的浏览器无法显示，请更新至最新版本或使用其他主流浏览器，谢谢合作。
+        </div>
+        <div id="wrap">
+            <div id="text">
+		        <div id="code">
+		      		<font color="#FF0000">  	
+		      			<span class="say">亲爱的小甜甜，我爱你，虽然你看不见我对你的告白</span><br>
+						<span class="say"></span><br>
+						<span class="say">我知道我不会甜言蜜语，但是我会用行动证明一切</span><br>
+						<span class="say"></span><br>
+			        	<span class="say">你说我啰嗦，有些东西因为越在乎所以越失去</span><br>
+						<span class="say"></span><br>
+                        <span class="say"><span class="space"></span> -- 爱你的人mr.yang--</span>
+			  		</font>
+			  		</p>
+      			</div>
+            </div>
+		    <div id="clock-box">
+		        <span class="STYLE1"></span>
+		        <font color="#33CC00">亲爱的小甜甜，我喜欢你</font>
+				<span class="STYLE1">已经是……</span>
+		        <div id="clock"></div>
+		    </div>
+		    <canvas id="canvas" width="1100" height="680"></canvas>
+	    </div>
+            
+    </div>
+    
 
+	<!--==========================================================-->
+    <script>
+	    (function(){
+	        var canvas = $('#canvas');
+	        if (!canvas[0].getContext) {
+	            $("#error").show();
+	            return false;       
+	        }
+	
+	        var width = canvas.width();
+	        var height = canvas.height();        
+	        canvas.attr("width", width);
+	        canvas.attr("height", height);
+	        var opts = {
+	            seed: {
+	                x: width / 2 - 20,
+	                color: "rgb(190, 26, 37)",
+	                scale: 2
+	            },
+	            branch: [
+	                [535, 680, 570, 250, 500, 200, 30, 100, [
+	                    [540, 500, 455, 417, 340, 400, 13, 100, [
+	                        [450, 435, 434, 430, 394, 395, 2, 40]
+	                    ]],
+	                    [550, 445, 600, 356, 680, 345, 12, 100, [
+	                        [578, 400, 648, 409, 661, 426, 3, 80]
+	                    ]],
+	                    [539, 281, 537, 248, 534, 217, 3, 40],
+	                    [546, 397, 413, 247, 328, 244, 9, 80, [
+	                        [427, 286, 383, 253, 371, 205, 2, 40],
+	                        [498, 345, 435, 315, 395, 330, 4, 60]
+	                    ]],
+	                    [546, 357, 608, 252, 678, 221, 6, 100, [
+	                        [590, 293, 646, 277, 648, 271, 2, 80]
+	                    ]]
+	                ]] 
+	            ],
+	            bloom: {
+	                num: 700,
+	                width: 1080,
+	                height: 650,
+	            },
+	            footer: {
+	                width: 1200,
+	                height: 5,
+	                speed: 10,
+	            }
+	        }
+	
+	        var tree = new Tree(canvas[0], width, height, opts);
+	        var seed = tree.seed;
+	        var foot = tree.footer;
+	        var hold = 1;
+	
+	        canvas.click(function(e) {
+	            var offset = canvas.offset(), x, y;
+	            x = e.pageX - offset.left;
+	            y = e.pageY - offset.top;
+	            if (seed.hover(x, y)) {
+	                hold = 0; 
+	                canvas.unbind("click");
+	                canvas.unbind("mousemove");
+	                canvas.removeClass('hand');
+	            }
+	        }).mousemove(function(e){
+	            var offset = canvas.offset(), x, y;
+	            x = e.pageX - offset.left;
+	            y = e.pageY - offset.top;
+	            canvas.toggleClass('hand', seed.hover(x, y));
+	        });
+	
+	        var seedAnimate = eval(Jscex.compile("async", function () {
+	            seed.draw();
+	            while (hold) {
+	                $await(Jscex.Async.sleep(10));
+	            }
+	            while (seed.canScale()) {
+	                seed.scale(0.95);
+	                $await(Jscex.Async.sleep(10));
+	            }
+	            while (seed.canMove()) {
+	                seed.move(0, 2);
+	                foot.draw();
+	                $await(Jscex.Async.sleep(10));
+	            }
+	        }));
+	
+	        var growAnimate = eval(Jscex.compile("async", function () {
+	            do {
+	    	        tree.grow();
+	                $await(Jscex.Async.sleep(10));
+	            } while (tree.canGrow());
+	        }));
+	
+	        var flowAnimate = eval(Jscex.compile("async", function () {
+	            do {
+	    	        tree.flower(2);
+	                $await(Jscex.Async.sleep(10));
+	            } while (tree.canFlower());
+	        }));
+	
+	        var moveAnimate = eval(Jscex.compile("async", function () {
+	            tree.snapshot("p1", 240, 0, 610, 680);
+	            while (tree.move("p1", 500, 0)) {
+	                foot.draw();
+	                $await(Jscex.Async.sleep(10));
+	            }
+	            foot.draw();
+	            tree.snapshot("p2", 500, 0, 610, 680);
+	
+	            // 会有闪烁不得意这样做
+	            canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
+	            canvas.css("background", "#ffe");
+	            $await(Jscex.Async.sleep(300));
+	            canvas.css("background", "none");
+	        }));
+	
+	        var jumpAnimate = eval(Jscex.compile("async", function () {
+	            var ctx = tree.ctx;
+	            while (true) {
+	                tree.ctx.clearRect(0, 0, width, height);
+	                tree.jump();
+	                foot.draw();
+	                $await(Jscex.Async.sleep(25));
+	            }
+	        }));
+	
+	        var textAnimate = eval(Jscex.compile("async", function () {
+			    var together = new Date();
+			    together.setFullYear(2016,11 , 15); 			//时间年月日
+			    together.setHours(16);						//小时	
+			    together.setMinutes(53);					//分钟
+			    together.setSeconds(0);					//秒前一位
+			    together.setMilliseconds(2);				//秒第二位
+	
+			    $("#code").show().typewriter();
+	            $("#clock-box").fadeIn(500);
+	            while (true) {
+	                timeElapse(together);
+	                $await(Jscex.Async.sleep(1000));
+	            }
+	        }));
+	
+	        var runAsync = eval(Jscex.compile("async", function () {
+	            $await(seedAnimate());
+	            $await(growAnimate());
+	            $await(flowAnimate());
+	            $await(moveAnimate());
+	
+	            textAnimate().start();
+	
+	            $await(jumpAnimate());
+	        }));
+	
+	        runAsync().start();
+	    })();
+	    
+    </script>
+    
+    
+    
+    
+    
+	<!--=======附属说明====================================================-->
+	<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+	
+	</div>
+	
+	
+
+	
+	
+	
+	
+	
+</body>
 </html>
